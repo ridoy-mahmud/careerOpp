@@ -30,7 +30,7 @@ const Nav = () => {
           </ul>
         </div>
         <Link to="/" className="btn btn-ghost text-xl  font-bold">
-          Career Opprotunity
+          Career Opp
         </Link>
       </div>
       <div className="navbar-center hidden lg:flex">
