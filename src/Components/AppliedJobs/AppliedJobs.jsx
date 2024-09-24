@@ -7,6 +7,23 @@ const AppliedJobs = () => {
   const jobs = useLoaderData();
 
   const [appiededJobs, setApplidedJObs] = useState([]);
+  const [displayJobs, setDisplayJobs] = useState([]);
+  const handleJobsFilter = (filter) => {
+    if (filter === "All") {
+      setDisplayJobs(appiededJobs);
+    } else if (filter === "Onsite") {
+      const onSiteJobs = appiededJobs.filter(
+        (job) => job.remote_or_onsite === "Onsite"
+      );
+      setDisplayJobs(onSiteJobs);
+    } else if (filter === "Remote") {
+      const remoteJobs = appiededJobs.filter(
+        (job) => job.remote_or_onsite === "Remote"
+      );
+      setDisplayJobs(remoteJobs);
+    }
+  };
+
   console.log(jobs);
   useEffect(() => {
     const storeJobsid = getStoredApplication();
@@ -20,9 +37,10 @@ const AppliedJobs = () => {
         }
       }
       setApplidedJObs(jobApplied);
+      setDisplayJobs(jobApplied);
       //   console.log(jobs, storeJobsid, jobApplied);
     }
-  }, []);
+  }, [jobs]);
   return (
     <div className="w-8/12 mx-auto">
       <h2 className="text-center font-bold text-2xl p-12">
@@ -30,19 +48,22 @@ const AppliedJobs = () => {
       </h2>
       <div className="flex justify-end mb-12">
         <details className="dropdown">
-          <summary className="btn m-1">Sort by</summary>
-          <ul className="menu dropdown-content bg-base-100 rounded-box z-[1] w-52 p-2 shadow">
-            <li>
-              <a>Item 1</a>
+          <summary className="btn btn-primary text-white m-1">Sort by</summary>
+          <ul className="menu dropdown-content bg-white rounded-box z-[1] w-52 p-2 shadow">
+            <li onClick={() => handleJobsFilter("All")}>
+              <a>All</a>
             </li>
-            <li>
-              <a>Item 2</a>
+            <li onClick={() => handleJobsFilter("Remote")}>
+              <a>Remote</a>
+            </li>
+            <li onClick={() => handleJobsFilter("Onsite")}>
+              <a>On Site</a>
             </li>
           </ul>
         </details>
       </div>
       <div className="mb-20">
-        {appiededJobs.map((job) => (
+        {displayJobs.map((job) => (
           <ShowAppliedJobs key={job.id} job={job}></ShowAppliedJobs>
         ))}
       </div>

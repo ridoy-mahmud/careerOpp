@@ -14,6 +14,8 @@ const ShowAppliedJobs = ({ job }) => {
     remote_or_onsite,
     location,
   } = job;
+  const handleDeails = () => {};
+
   return (
     <div>
       <div className="card card-side bg-white p-5 border-2 mb-5 flex justify-between items-center">
@@ -41,7 +43,10 @@ const ShowAppliedJobs = ({ job }) => {
           </div>
         </div>
         <Link>
-          <button className=" bg-[#8984fe] text-white px-4 py-2 rounded-sm">
+          <button
+            onClick={() => handleDeails()}
+            className=" bg-[#8984fe] text-white px-4 py-2 rounded-sm"
+          >
             View Details
           </button>
         </Link>
