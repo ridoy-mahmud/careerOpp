@@ -10,33 +10,33 @@ const JobCatagorys = () => {
       <br />
       <small>
         Explore thousands of job opportunities with all the information you
-        need. Its your future
+        need. It's your future
       </small>
       <br />
       <br />
-      <div className="w-8/12 flex justify-stretch mx-auto gap-5 ">
-        <div className="border-2 w-[311px] h-[240px] items-center text-start pt-7 ps-4">
+      <div className="w-11/12 md:w-10/12 lg:w-8/12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 mx-auto">
+        <div className="border-2 h-[240px] items-center text-start pt-7 ps-4">
           <BiCalculator className="text-5xl font-bold bg-slate-200 p-2 text-[#8a82fe]" />
           <br />
           <h2>Accounts and Finance</h2>
           <br />
           <small>300 Jobs Available</small>
         </div>
-        <div className="border-2 w-[311px] h-[240px] items-center text-start pt-7 ps-4">
+        <div className="border-2 h-[240px] items-center text-start pt-7 ps-4">
           <HiOutlineLightBulb className="text-5xl font-bold bg-slate-200 p-2 text-[#8a82fe] " />
           <br />
           <h2>Creative Design</h2>
           <br />
           <small>100+ Jobs Available</small>
         </div>
-        <div className="border-2 w-[311px] h-[240px] items-center text-start pt-7 ps-4">
+        <div className="border-2 h-[240px] items-center text-start pt-7 ps-4">
           <MdOutlineConnectWithoutContact className="text-5xl font-bold bg-slate-200 p-2 text-[#8a82fe] " />
           <br />
           <h2>Marketing & Sales</h2>
           <br />
           <small>150 Jobs Available</small>
         </div>
-        <div className="border-2 w-[311px] h-[240px] items-center text-start pt-7 ps-4">
+        <div className="border-2 h-[240px] items-center text-start pt-7 ps-4">
           <BsCpu className="text-5xl font-bold bg-slate-200 p-2 text-[#8a82fe]" />
           <br />
           <h2>Engineering Job</h2>

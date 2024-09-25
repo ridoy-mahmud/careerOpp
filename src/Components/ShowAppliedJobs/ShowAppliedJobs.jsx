@@ -3,51 +3,38 @@ import { AiFillDollarCircle } from "react-icons/ai";
 import { Link } from "react-router-dom";
 
 const ShowAppliedJobs = ({ job }) => {
-  console.log(job);
-  const {
-    job_title,
-    job_description,
-    job_responsibility,
-    salary,
-    logo,
-    company_name,
-    remote_or_onsite,
-    location,
-  } = job;
-  const handleDeails = () => {};
+  const { job_title, salary, logo, company_name, remote_or_onsite, location } =
+    job;
 
   return (
     <div>
-      <div className="card card-side bg-white p-5 border-2 mb-5 flex justify-between items-center">
-        <div className="card card-side">
-          <figure className="px-12 py-8 bg-slate-50">
-            <img className="w-28  " src={logo} alt="Movie" />
+      <div className="card card-side bg-white p-5 border-2 mb-5 flex flex-col lg:flex-row justify-between items-center">
+        <div className="flex flex-col sm:flex-row items-start lg:items-center w-full">
+          <figure className="px-12 py-8 bg-slate-50 flex-shrink-0">
+            <img className="w-28" src={logo} alt="Company Logo" />
           </figure>
-          <div className="card-body">
-            <h2 className="card-title">{job_title}</h2>
-            <p>{company_name}</p>
-            <div>
-              <button className="btn btn-sm btn-outline me-3 text-[#7f8ffe] btn-[#7f8ffe]">
+          <div className="card-body w-full">
+            <h2 className="card-title text-xl lg:text-2xl">{job_title}</h2>
+            <p className="text-sm lg:text-base">{company_name}</p>
+            <div className="flex flex-wrap gap-2 mt-3">
+              <button className="btn btn-sm btn-outline text-[#7f8ffe]">
                 {remote_or_onsite}
               </button>
-              <button className="btn btn-sm btn-outline text-[#7f8ffe] btn-[#7f8ffe]">
+              <button className="btn btn-sm btn-outline text-[#7f8ffe]">
                 Full Time
               </button>
             </div>
-            <div className="flex items-center text-sm w-12/12 gap-1 mt-1 ">
-              <FaLocationDot />
+            <div className="flex items-center text-sm mt-2 gap-2">
+              <FaLocationDot className="text-lg" />
               <p>{location}</p>
-              <AiFillDollarCircle />
+              <AiFillDollarCircle className="text-lg" />
               <p>Salary - {salary}</p>
             </div>
           </div>
         </div>
-        <Link>
-          <button
-            onClick={() => handleDeails()}
-            className=" bg-[#8984fe] text-white px-4 py-2 rounded-sm"
-          >
-            View Details
+        <Link className="mt-5 lg:mt-0">
+          <button className="bg-[#8984fe] text-white px-4 py-2 rounded-sm">
+            Details
           </button>
         </Link>
       </div>
