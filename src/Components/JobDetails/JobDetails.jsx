@@ -90,7 +90,7 @@ const JobDetails = () => {
               <div className="card-actions justify-end">
                 <button
                   onClick={() => handleApplyJob()}
-                  className="btn btn-primary w-full"
+                  className="btn text-white btn-primary w-full"
                 >
                   Apply Now
                 </button>

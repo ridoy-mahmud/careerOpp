@@ -1,0 +1,47 @@
+[
+  {
+    "id": 1,
+    "title": "The Future of the Job Market: Trends to Watch in 2024",
+    "image": "https://plus.unsplash.com/premium_photo-1661771773771-a093c948ba92?q=80&w=1770&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "category": "Job Market",
+    "author": "Jane Doe",
+    "posted_time": "2024-09-25T10:15:00",
+    "description": "Explore the latest trends shaping the job market in 2024. From automation to remote work, discover how these changes will impact job seekers and employers alike."
+  },
+  {
+    "id": 2,
+    "title": "How to Build a Thriving Career in Tech",
+    "image": "https://plus.unsplash.com/premium_photo-1661266819853-ac00dcaf21d2?q=80&w=1772&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "category": "Career Advice",
+    "author": "John Smith",
+    "posted_time": "2024-09-22T14:45:00",
+    "description": "Looking to make it big in the tech industry? This post provides tips and strategies for building a successful tech career, including must-have skills and networking advice."
+  },
+  {
+    "id": 3,
+    "title": "Remote Work and Its Impact on the Global Job Market",
+    "image": "https://images.unsplash.com/photo-1455849318743-b2233052fcff?q=80&w=1769&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "category": "Job Market",
+    "author": "Emily White",
+    "posted_time": "2024-09-18T08:30:00",
+    "description": "Remote work is transforming the global job market. Learn about its long-term effects on employment patterns, productivity, and job opportunities across different sectors."
+  },
+  {
+    "id": 4,
+    "title": "Top Skills Employers Are Looking for in 2024",
+    "image": "https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=1770&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "category": "Career Advice",
+    "author": "Michael Brown",
+    "posted_time": "2024-09-15T16:20:00",
+    "description": "Discover the top skills employers are seeking in 2024. From technical expertise to soft skills, find out what you need to stand out in a competitive job market."
+  },
+  {
+    "id": 5,
+    "title": "Navigating Career Changes in a Dynamic Job Market",
+    "image": "https://images.unsplash.com/photo-1598257006425-393e34c94b1d?q=80&w=1770&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "category": "Career Advice",
+    "author": "Sarah Johnson",
+    "posted_time": "2024-09-10T11:00:00",
+    "description": "Thinking of changing careers? This post provides guidance on how to successfully transition to a new industry or role in today’s fast-changing job market."
+  }
+]
